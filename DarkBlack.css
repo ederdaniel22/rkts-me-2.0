@@ -5,7 +5,7 @@
 }
 
 html {
-  --bg-color: #edf2ff;
+  --bg-color: #00082f;
   --text-color: #00082f;
 }
 
@@ -13,8 +13,11 @@ a {
   text-decoration: none;
 }
 body {
-  background: var(--bg-color);
-  color: var(--text-color);
+  background-image: url(./img/astronauta.png);
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
   font-family: "Roboto", sans-serif;
 }
 
@@ -38,14 +41,17 @@ header {
   justify-content: space-between;
 }
 .header-menu h1 {
+  background: #364fc7;
+  border-radius: 10px;
   display: flex;
-  padding: 5px 10px 15px 0;
+  padding: 3px 5px 10px 0;
   align-items: left;
+  color: #fff;
 }
 .links-theme {
   display: flex;
   padding: 15px;
-  margin: 0 10px 0 10;
+  margin: 0 8px 0 0px;
 
   align-items: end;
   justify-content: space-between;
@@ -85,14 +91,14 @@ header {
   transition: 2s;
 }
 .links-theme #blue a {
-  color: #fff;
+  color: #000;
 }
 .links-theme #blue:hover {
   background-color: #fff;
   color: #000;
 }
 .links-theme #black {
-  background: #000;
+  background: #ffc0cb;
   color: #fff;
   padding: 5px;
   margin-left: 10px;
@@ -111,27 +117,50 @@ header {
   background-color: #fff;
   color: #000;
 }
+.links-theme #home {
+  background: #364fc7;
+  color: #00082f;
+  margin-left: 5px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 14px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 5px;
+  transition: 2s;
+}
+.links-theme #home a {
+  color: #000;
+}
+.links-theme #home:hover {
+  background-color: #fff;
+  color: #000;
+}
 img {
   width: 100%;
 }
 
 img.avatar {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   padding: 3.7px;
   border: #4263eb solid 4px;
 }
 
 h1 {
+  background: #4263eb;
   font-size: 32px;
-  color: #00082f;
+  color: #fff;
   margin-top: 24px;
   margin-bottom: 8px;
 }
 .username {
   font-family: "Roboto", monospace;
   font-weight: 400;
+  background-color: #364fc7;
+  color: #fff;
   opacity: 0.8;
   font-size: 18px;
 }
@@ -157,15 +186,19 @@ ul li a:hover {
   background: #364fc7;
 }
 footer {
+  background: #364fc7;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
   opacity: o.6;
   transition: opacity 400ms;
+  padding: 15px;
 }
 
 footer:hover {
   opacity: 1;
 }
 footer a {
-  color: var(--text-color);
+  color: #fff;
 }
