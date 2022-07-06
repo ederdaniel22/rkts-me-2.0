@@ -19,7 +19,7 @@ body {
 
 .container {
   text-align: center;
-  width: 300px;
+  width: 400px;
   margin: 60px auto;
 }
 header {
@@ -30,6 +30,7 @@ header {
 }
 .header-menu {
   display: flex;
+  box-sizing: border-box;
   margin-right: 15px;
   align-items: center;
   text-align: center;
@@ -178,8 +179,7 @@ ul li a:hover {
 footer {
   font-weight: 500;
   font-size: 12px;
-  background: #000;
-  color: #fff;
+  color: #364fc7;
   opacity: o.6;
   transition: opacity 400ms;
 }
@@ -188,5 +188,5 @@ footer:hover {
   opacity: 1;
 }
 footer a {
-  color: #fff;
+  color: #364fc7;
 }

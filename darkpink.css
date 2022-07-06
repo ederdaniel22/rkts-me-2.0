@@ -3,24 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-html {
-  --bg-color: #00082f;
-  --text-color: #00082f;
-}
-
 a {
   text-decoration: none;
 }
+
+html {
+  --bg-color: #edf2ff;
+  --text-color: #00082f;
+}
+
 body {
-  background: #ff00ff;
+  background: #fff0f6;
+  color: #1f000b;
   font-family: "Roboto", sans-serif;
 }
 
 .container {
   align-items: center;
   text-align: center;
-  width: 350px;
+  width: 400px;
   margin: 60px auto;
 }
 header {
@@ -144,7 +145,7 @@ img.avatar {
 
 h1 {
   font-size: 32px;
-  color: #00082f;
+  color: var(--text-color);
   margin-top: 24px;
   margin-bottom: 8px;
 }
@@ -165,7 +166,7 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #4263eb;
+  background: #d6336c;
   margin-bottom: 16px;
   color: #fff;
   text-transform: uppercase;
